@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://d35cbmnjss0cx"]
+
+[ext_resource type="Script" uid="uid://nbshobx0qx2m" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Texture2D" uid="uid://d0r3nfjna62ri" path="res://assets/art/isometric_tileset.png" id="2_onrkg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
+size = Vector2(19, 3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
+atlas = ExtResource("2_onrkg")
+region = Rect2(98.008934, 63.755226, 30.575981, 33.83651)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+y_sort_enabled = true
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15)
+shape = SubResource("RectangleShape2D_4flbx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_i3pqv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
