@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqe3ivl3ukfi7"]
+
+[ext_resource type="Script" uid="uid://b4w6kkncccvwg" path="res://scripts/door_trigger.gd" id="1_qgrgd"]
+
+[node name="door_trigger" type="Area2D"]
+script = ExtResource("1_qgrgd")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(16, 0, 32, 8, 16, 16, 0, 8)
