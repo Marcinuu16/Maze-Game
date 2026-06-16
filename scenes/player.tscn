@@ -71,6 +71,7 @@ animations = [{
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 1
 y_sort_enabled = true
 script = ExtResource("1_4flbx")
 

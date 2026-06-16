@@ -1,0 +1,97 @@
+[gd_scene load_steps=4 format=4 uid="uid://b21s3av7utfpl"]
+
+[ext_resource type="Texture2D" uid="uid://bqyrcrnydreg" path="res://assets/art/isometric_shapes.png" id="1_klc7l"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d3uvb"]
+texture = ExtResource("1_klc7l")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, 8)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, 8)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, 8)
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, 8)
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+5:0/0 = 0
+5:0/0/texture_origin = Vector2i(0, 8)
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+6:0/0 = 0
+6:0/0/texture_origin = Vector2i(0, 8)
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+1:1/0 = 0
+1:1/0/texture_origin = Vector2i(0, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+2:1/0 = 0
+2:1/0/texture_origin = Vector2i(0, 8)
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+3:1/0 = 0
+3:1/0/texture_origin = Vector2i(0, 8)
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+4:1/0 = 0
+4:1/0/texture_origin = Vector2i(0, 8)
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+5:1/0 = 0
+5:1/0/texture_origin = Vector2i(0, 8)
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+6:1/0 = 0
+6:1/0/texture_origin = Vector2i(0, 8)
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, -16, 0, 0, 8, 16, 0)
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, 8)
+
+[sub_resource type="TileSet" id="TileSet_s5pwh"]
+tile_shape = 1
+tile_layout = 4
+tile_size = Vector2i(32, 16)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_d3uvb")
+
+[node name="room2" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+y_sort_enabled = true
+format = 2
+
+[node name="TileMapLayer0" type="TileMapLayer" parent="TileMap"]
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAD//wEAAAAAAAEAAAAAAAEAAAAAAAEAAAAAAAIAAAAAAAEAAAD//wIAAAAAAAEAAAABAAEAAAAAAAEAAAABAAIAAAAAAAEAAAACAAIAAAAAAAEAAAACAAEAAAAAAAEAAAACAAMAAAAAAAEAAAABAAMAAAAAAAEAAAAAAAMAAAAAAAEAAAD//wMAAAAAAAEAAAD//wQAAAAAAAEAAAAAAAQAAAAAAAEAAAABAAQAAAAAAAEAAAACAAQAAAAAAAEAAAADAAEAAAAAAAEAAAADAAIAAAAAAAEAAAADAAMAAAAAAAEAAAADAAQAAAAAAAEAAAACAAUAAAAAAAEAAAADAAUAAAAAAAEAAAABAAUAAAAAAAEAAAAAAAUAAAAAAAEAAAD//wUAAAAAAAEAAAAEAAEAAAAAAAEAAAAEAAIAAAAAAAEAAAAEAAMAAAAAAAEAAAAEAAQAAAAAAAEAAAAEAAUAAAAAAAEAAAAEAAYAAAAAAAEAAAADAAYAAAAAAAEAAAACAAYAAAAAAAEAAAABAAYAAAAAAAEAAAAAAAYAAAAAAAEAAAD//wYAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_s5pwh")
+collision_enabled = false
+
+[node name="TileMapLayer1" type="TileMapLayer" parent="TileMap"]
+z_index = 1
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAEAAAABAAAAAAAAAAEAAAACAAAAAAAAAAEAAAADAAAAAAAAAAEAAAAEAAAAAAAAAAEAAAAFAAAAAAAAAAEAAAAFAAEAAAAAAAEAAAAFAAIAAAAAAAEAAAAFAAMAAAAAAAEAAAAFAAQAAAAAAAEAAAAFAAUAAAAAAAEAAAACAAMAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_s5pwh")
+
+[node name="TileMapLayer2" type="TileMapLayer" parent="TileMap"]
+z_index = 2
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAABAP//AAAAAAEAAAACAP//AAAAAAEAAAADAP//AAAAAAEAAAAEAP//AAAAAAEAAAAFAP//AAAAAAEAAAAGAP//AAAAAAEAAAAGAAAAAAAAAAEAAAAGAAEAAAAAAAEAAAAGAAIAAAAAAAEAAAAGAAMAAAAAAAEAAAAGAAQAAAAAAAEAAAADAAIAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_s5pwh")
+collision_enabled = false
+
+[node name="TileMapLayer3" type="TileMapLayer" parent="TileMap"]
+z_index = 3
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAACAP7/AAAAAAEAAAADAP7/AAAAAAEAAAAEAP7/AAAAAAEAAAAFAP7/AAAAAAEAAAAGAP7/AAAAAAEAAAAHAP7/AAAAAAEAAAAHAP//AAAAAAEAAAAHAAAAAAAAAAEAAAAHAAEAAAAAAAEAAAAHAAIAAAAAAAEAAAAHAAMAAAAAAAEAAAAEAAEAAAAAAAEAAAA=")
+tile_set = SubResource("TileSet_s5pwh")
+collision_enabled = false
+
+[node name="TileMapLayer4" type="TileMapLayer" parent="TileMap"]
+z_index = 4
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAADAP3/AAAAAAEAAAAEAP3/AAAAAAEAAAAFAP3/AAAAAAEAAAAGAP3/AAAAAAEAAAAHAP3/AAAAAAEAAAAIAP3/AAAAAAEAAAAIAP7/AAAAAAEAAAAIAP//AAAAAAEAAAAIAAAAAAAAAAEAAAAIAAEAAAAAAAEAAAAIAAIAAAAAAAEAAAAFAAAAAAACAAEAAAAHAP//AAACAAEAAAAHAAAAAAACAAEAAAAHAP7/AAACAAEAAAAGAP7/AAACAAEAAAAGAP//AAACAAEAAAAGAAAAAAACAAEAAAAFAP7/AAACAAEAAAAFAP//AAACAAEAAAAHAAIAAAACAAEAAAAGAAIAAAACAAEAAAAGAAEAAAACAAEAAAAFAAEAAAACAAEAAAAHAAEAAAACAAEAAAAFAAIAAAACAAEAAAAEAAEAAAACAAEAAAAEAAAAAAACAAEAAAAEAP7/AAACAAEAAAADAP7/AAACAAEAAAADAP//AAACAAEAAAAEAP//AAACAAEAAAADAAAAAAACAAEAAAADAAEAAAACAAEAAAAEAAIAAAACAAEAAAADAAIAAAACAAEAAAA=")
+tile_set = SubResource("TileSet_s5pwh")
+collision_enabled = false
