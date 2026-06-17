@@ -4,6 +4,7 @@
 
 [node name="door_trigger" type="Area2D"]
 script = ExtResource("1_qgrgd")
+Target_door = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PackedVector2Array(16, 0, 32, 8, 16, 16, 0, 8)
