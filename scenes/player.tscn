@@ -76,7 +76,7 @@ y_sort_enabled = true
 script = ExtResource("1_4flbx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13)
+position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_g2els")
 debug_color = Color(0.9566557, 0.14865595, 0.38113236, 0.41960785)
 
@@ -85,8 +85,8 @@ zoom = Vector2(4, 4)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 y_sort_enabled = true
-position = Vector2(0, 16)
+position = Vector2(0, 8)
 sprite_frames = SubResource("SpriteFrames_nvl01")
-frame = 6
-frame_progress = 0.67086655
+frame = 4
+frame_progress = 0.043684747
 offset = Vector2(0, -16)

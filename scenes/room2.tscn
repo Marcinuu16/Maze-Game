@@ -100,5 +100,6 @@ tile_set = SubResource("TileSet_s5pwh")
 collision_enabled = false
 
 [node name="door1" parent="." instance=ExtResource("2_d3uvb")]
-position = Vector2(32, 16)
+position = Vector2(48, 24)
 Target_door = 0
+Target_direction = 3

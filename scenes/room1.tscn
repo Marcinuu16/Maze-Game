@@ -100,6 +100,7 @@ tile_set = SubResource("TileSet_277jj")
 collision_enabled = false
 
 [node name="door1" parent="." instance=ExtResource("2_gli6d")]
-position = Vector2(144, 8)
+position = Vector2(160, 16)
 Target_room = 1
 Target_door = 0
+Target_direction = 2
