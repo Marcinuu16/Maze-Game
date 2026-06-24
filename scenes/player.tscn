@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://d35cbmnjss0cx"]
+[gd_scene format=3 uid="uid://d35cbmnjss0cx"]
 
 [ext_resource type="Script" uid="uid://nbshobx0qx2m" path="res://scripts/player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://daly5eq16u5lm" path="res://assets/art/16x32 Rotate-Sheet.png" id="2_onrkg"]
@@ -65,25 +65,25 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_n7ghd")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=32207467]
 z_index = 1
 y_sort_enabled = true
 script = ExtResource("1_4flbx")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=123621870]
 position = Vector2(0, 5)
 shape = SubResource("RectangleShape2D_g2els")
 debug_color = Color(0.9566557, 0.14865595, 0.38113236, 0.41960785)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
+[node name="Camera2D" type="Camera2D" parent="." unique_id=634484094]
+zoom = Vector2(6, 6)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=724285316]
 y_sort_enabled = true
 position = Vector2(0, 8)
 sprite_frames = SubResource("SpriteFrames_nvl01")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0r3nfjna62ri"
-path="res://.godot/imported/isometric_tileset.png-dad8dcdc1d1d01b5fbe2343265d3d1a0.ctex"
+uid="uid://dq28lvqd6lsno"
+path="res://.godot/imported/light_tt.png-57151fa324b84d8dac693ccbfbab9ba2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/art/isometric_tileset.png"
-dest_files=["res://.godot/imported/isometric_tileset.png-dad8dcdc1d1d01b5fbe2343265d3d1a0.ctex"]
+source_file="res://assets/art/light_tt.png"
+dest_files=["res://.godot/imported/light_tt.png-57151fa324b84d8dac693ccbfbab9ba2.ctex"]
 
 [params]
 

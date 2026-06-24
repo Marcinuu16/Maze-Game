@@ -21,7 +21,7 @@ func _input(event):
 func prepare_swap(body, to_room, to_door,to_direction):
 	if body is CharacterBody2D:
 		if is_swapping:
-			print("swap blocked")
+			print("swap is locked")
 			return
 		is_swapping = true
 		print("ready to swap")
