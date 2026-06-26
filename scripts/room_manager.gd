@@ -34,7 +34,7 @@ func swap_room(body, to_room, to_door,to_direction):
 		
 		if current_room:
 			current_room.queue_free()
-			print("deleted room")
+			print("freed previous room")
 			
 		current_room = load("res://scenes/room"+str(to_room)+".tscn").instantiate()
 		get_node("/root/game").add_child(current_room)
@@ -54,8 +54,6 @@ func swap_room(body, to_room, to_door,to_direction):
 				print("door leading west")
 				spawn_cords = Vector2(-16,8)
 				
-		print(player.position)
-		print(current_room.get_node("door"+str(to_door)).position)
 		print(spawn_cords)
 		player.position = current_room.get_node("door"+str(to_door)).position + spawn_cords
 		
