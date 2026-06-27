@@ -46,7 +46,7 @@ func swap_room(body, to_room, to_door,to_direction):
 				print("door leading north")
 			1:
 				print("door leading south")
-				spawn_cords = Vector2(16,16)
+				spawn_cords = Vector2(16,8)
 			2:
 				print("door leading east")
 				spawn_cords = Vector2(16,-16)
